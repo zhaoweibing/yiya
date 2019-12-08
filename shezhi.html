@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/chushihua.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/shezhi.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="he-in">
+          <div class="back"><span class="iconfont icon-xiaoyuhao"></span></div>
+          <h1>通用设置</h1>
+          <div class="xiang"></div>
+        </div>
+      </header>
+      <section>
+        <div class="one">
+          <div class="up clearfix">
+            <h3>账号管理</h3>
+            <span>></span>
+            <div><img src="./images/dada11.jpg" alt="" /></div>
+            <h4>你大爸</h4>
+          </div>
+          <div class="up clearfix">
+            <h3>账号管理</h3>
+            <span>></span>
+
+            <h4>12345678901</h4>
+          </div>
+        </div>
+        <div class="one two">
+          <div class="up clearfix">
+            <h3>2/3/4g流量限额提醒</h3>
+            <h4><div class="yuan"></div></h4>
+          </div>
+          <div class="up up1 clearfix">
+            <h3>流量限额</h3>
+            <span>></span>
+
+            <h4>100MB</h4>
+          </div>
+        </div>
+        <div class="one two">
+          <div class="up up1 clearfix">
+            <h3>报警通知提示音</h3>
+            <span>></span>
+            <h4>默认1</h4>
+          </div>
+        </div>
+        <div class="one two three">
+          <div class="up clearfix">
+            <h3>开启设备自动升级</h3>
+            <h4><div class="yuan"></div></h4>
+          </div>
+          <div class="up up1 clearfix">
+            <h3>升级时间段</h3>
+            <span>></span>
+
+            <h4>晚间</h4>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 10.24 + "px";
+      var shi = false;
+      document.querySelector(".two h4").onclick = function() {
+        if (!shi) {
+          document.querySelector(".two h4 .yuan").style.marginRight = "0.81rem";
+          this.style.backgroundColor = "#ccc";
+          shi = true;
+        } else {
+          document.querySelector(".two h4 .yuan").style.marginRight =
+            "-0.01rem";
+          this.style.backgroundColor = "rgb(241, 19, 149";
+          shi = false;
+        }
+      };
+      document.querySelector(".three h4").onclick = function() {
+        if (!shi) {
+          document.querySelector(".three h4 .yuan").style.marginRight =
+            "0.81rem";
+          this.style.backgroundColor = "#ccc";
+          shi = true;
+        } else {
+          document.querySelector(".three h4 .yuan").style.marginRight =
+            "-0.01rem";
+          this.style.backgroundColor = "rgb(241, 19, 149";
+          shi = false;
+        }
+      };
+      document.querySelector(".icon-xiaoyuhao").onclick = function() {
+        window.history.back();
+      };
+    </script>
+  </body>
+</html>

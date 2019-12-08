@@ -1,0 +1,146 @@
+.wrap {
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  width: 100vw;
+  height: 2.2rem;
+  background-color: rgb(221, 45, 45);
+  display: flex;
+  justify-content: center;
+}
+.he-in {
+  width: 9rem;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 26px;
+  color: #fff;
+  margin-top: 1rem;
+}
+.he-in > div {
+  width: 1rem;
+  height: 1rem;
+}
+.back {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 1rem;
+}
+.back span {
+  font-size: 30px;
+}
+section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.up-tu {
+  width: 3rem;
+  height: 3rem;
+  background-color: red;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+.up-tu img {
+  width: 100%;
+  height: 100%;
+}
+.xuanze {
+  margin-top: 0.9rem;
+}
+.xuanze > h3 > div {
+  width: 12px;
+  height: 12px;
+  border: 1px solid red;
+  border-radius: 50%;
+  float: left;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.xuanze h5 {
+  margin-top: 2px;
+  margin-left: 2px;
+  width: 8px;
+  height: 8px;
+  background-color: green;
+  border-radius: 50%;
+  display: none;
+}
+.xuanze > h3 > span {
+  font-size: 24px;
+  float: left;
+}
+.xuanze > h4 > div {
+  width: 12px;
+  height: 12px;
+  border: 1px solid blue;
+  border-radius: 50%;
+  float: left;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.xuanze h5 {
+  margin-top: 2px;
+  margin-left: 2px;
+  width: 8px;
+  height: 8px;
+  background-color: green;
+  border-radius: 50%;
+  display: none;
+}
+.xuanze h3 h5 {
+  display: block;
+}
+.xuanze > h4 > span {
+  font-size: 24px;
+  float: left;
+}
+.xuanze > h3,
+.xuanze > h4 {
+  float: left;
+}
+.xuanze > h3 {
+  margin-right: 0.2rem;
+}
+.xuanze > h4 {
+  margin-left: 0.2rem;
+}
+input {
+  width: 80vw;
+  height: 1rem;
+  outline: none;
+  border: 0;
+  font-size: 18px;
+}
+.three-input {
+  width: 90vw;
+  margin-top: 0.3rem;
+  border-bottom: 1px solid #ccc;
+}
+.three-input > span {
+  color: rgb(235, 46, 134);
+  font-size: 24px;
+}
+.denglu {
+  display: block;
+  width: 85vw;
+  height: 1.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    rgb(231, 71, 151),
+    rgb(236, 43, 43)
+  );
+  border-radius: 30px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.5rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

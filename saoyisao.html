@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/chushihua.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/iconfont3.css" />
+    <link rel="stylesheet" href="./css/saoyisao.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="he-in">
+          <div class="back"><span class="iconfont icon-xiaoyuhao"></span></div>
+          <h1>二维码/条码</h1>
+          <div class="xiang">相册</div>
+        </div>
+      </header>
+      <section>
+        <div class="clearfix"><img src="./images/u170.png" alt="" /></div>
+      </section>
+      <footer>
+        <span class="iconfont icon-tupian"></span>
+        <span class="iconfont icon-ziyuan"></span>
+        <span class="iconfont icon-code"></span>
+      </footer>
+    </div>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 10.24 + "px";
+      document.querySelector(".back").onclick = function() {
+        window.history.back();
+      };
+    </script>
+  </body>
+</html>

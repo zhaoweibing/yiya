@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/chushihua.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/zhuce.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="he-in">
+          <div class="back"><span class="iconfont icon-xiaoyuhao"></span></div>
+          <h1>注册</h1>
+          <div></div>
+        </div>
+      </header>
+      <section>
+        <div class="first-input">
+          <span class="iconfont icon-yonghu-tianchong"></span>
+          <input class="up" type="text" placeholder="请输入您的手机号" />
+        </div>
+        <div class="two-input">
+          <span class="iconfont icon-yduidunpaishixin"></span>
+          <input class="up1" type="text" placeholder="请输入验证码" /><span
+            class="yan"
+            >| 获取验证码</span
+          >
+        </div>
+        <div class="three-input">
+          <span class="iconfont icon-suo-tianchong"></span>
+          <input
+            class="up2"
+            type="text"
+            placeholder="请输入6-12数字加字母的组合密码"
+          />
+        </div>
+        <a class="denglu" href="./yonghuxinxi.html">注册</a>
+      </section>
+    </div>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 10.24 + "px";
+      document.querySelector(".back").onclick = function() {
+        window.history.back();
+      };
+      document.querySelector(".denglu").onclick = function(event) {
+        var zhang = document.querySelector(".up").value;
+        var yan = document.querySelector(".up1").value;
+        var mi = document.querySelector(".up2").value;
+        if (zhang === "") {
+          alert("账号呢老铁");
+          event.preventDefault();
+        } else if (yan === "") {
+          alert("验证呢老铁");
+          event.preventDefault();
+        } else if (mi === "") {
+          alert("密码呢老铁");
+          event.preventDefault();
+        }
+      };
+    </script>
+  </body>
+</html>

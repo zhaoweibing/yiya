@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/chushihua.css" />
+    <link rel="stylesheet" href="./css/iconfont2.css" />
+    <link rel="stylesheet" href="./css/iconfont4.css" />
+    <link rel="stylesheet" href="./css/shishijiankong.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="he-in">
+          <div class="back">
+            <span class="iconfont icon-htmal5icon37"></span>
+          </div>
+          <h1>实时监控</h1>
+          <div class="he-in">
+            <div class="back"><span class="iconfont icon-shezhi"></span></div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="up"><img src="./images/u222_02.gif" alt="" /></div>
+        <div class="down">
+          <span class="iconfont icon-dianchi one"></span
+          ><span class="iconfont icon-huatong"></span
+          ><span class="iconfont icon-luxianghuifang_"></span
+          ><span class="iconfont icon-ai-camera"></span>
+        </div>
+      </section>
+      <footer><img src="./images/u222_04.gif" alt="" /></footer>
+    </div>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 10.24 + "px";
+
+      var jiu = document.querySelectorAll(".down .iconfont");
+      jiu.forEach(function(ele) {
+        ele.onclick = function() {
+          jiu.forEach(function(em) {
+            em.style.color = "black";
+          });
+          this.style.color = "red";
+        };
+      });
+      document.querySelector(".icon-htmal5icon37").onclick = function() {
+        window.history.back();
+      };
+      document.querySelector(".icon-shezhi").onclick = function() {
+        location.assign("./shezhi.html");
+      };
+    </script>
+  </body>
+</html>

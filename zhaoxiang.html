@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/chushihua.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/iconfont2.css" />
+    <link rel="stylesheet" href="./css/zhaoxiang.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="he-in">
+          <div class="back"><span class="iconfont icon-xiaoyuhao"></span></div>
+          <h1>正在视频</h1>
+          <div class="he-in">
+            <div class="back"><span class="iconfont icon-shezhi"></span></div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <img class="zuida" src="./images/u184.jpg" alt="" />
+        <img src="./images/u189.png" alt="" class="ma" />
+        <img src="./images/1_u197.png" alt="" class="z1" />
+        <img src="./images/1_u208.png" alt="" class="z2" />
+        <img src="./images/1_u206.png" alt="" class="z3" />
+        <img src="./images/1_u202.png" alt="" class="z4" />
+        <img class="mian" src="./images/1_u194.png" alt="" />
+      </section>
+    </div>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 10.24 + "px";
+      document.querySelector(".icon-xiaoyuhao").onclick = function() {
+        location.assign("./shouye.html");
+      };
+      document.querySelector(".icon-shezhi").onclick = function() {
+        location.assign("./shezhi.html");
+      };
+    </script>
+  </body>
+</html>

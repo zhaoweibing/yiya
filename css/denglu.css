@@ -1,0 +1,133 @@
+.wrap {
+  width: 100%;
+}
+header {
+  width: 100vw;
+  height: 2.2rem;
+  background-color: rgb(221, 45, 45);
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size: 26px;
+  color: #fff;
+  margin-top: 1rem;
+}
+.kong1,
+.kong2 {
+  width: 10px;
+  height: 1px;
+}
+section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.logo {
+  width: 30vw;
+  margin-top: 0.8rem;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+section > .input1 {
+  width: 85vw;
+  height: 1rem;
+  margin-top: 1rem;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  padding-left: 5vw;
+  font-size: 18px;
+}
+section > .input2 {
+  width: 85vw;
+  height: 1rem;
+  margin-top: 1rem;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  padding-left: 5vw;
+  font-size: 18px;
+}
+.duanxin {
+  width: 90vw;
+  margin-top: 0.5rem;
+  text-align: right;
+  font-size: 16px;
+  color: rgb(240, 66, 66);
+}
+.denglu {
+  display: block;
+  width: 85vw;
+  height: 1.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    rgb(231, 71, 151),
+    rgb(236, 43, 43)
+  );
+  border-radius: 30px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.5rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.zhuce {
+  margin-top: 0.3rem;
+  width: 90vw;
+  font-size: 16px;
+  color: rgb(236, 43, 43);
+}
+.zhuce > h3 {
+  width: 46%;
+  float: left;
+  text-align: right;
+}
+.zhuce > h4 {
+  height: 49%;
+  float: left;
+}
+.zhuce > h5 {
+  float: left;
+  margin: 0 0.3rem 0 0.3rem;
+}
+.henggang {
+  margin-top: 0.6rem;
+  width: 90vw;
+  font-size: 16px;
+}
+.henggang > h4 {
+  float: left;
+}
+.henggang > h3,
+.henggang > h5 {
+  margin: 0 0.3rem 0 0.3rem;
+  float: left;
+  border-top: 1px solid #ccc;
+  width: 30vw;
+  height: 1px;
+  margin-top: 0.3rem;
+}
+footer {
+  width: 100vw;
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.tu {
+  width: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tu > img {
+  width: 1rem;
+  height: 1rem;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+    name="viewport"
+    content="width=device-width,inital-scale=1.0,user-scalable=no"
+  />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/chushihua.css" />
+    <link rel="stylesheet" href="./css/iconfont2.css" />
+    <link rel="stylesheet" href="./css/shouye.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="he-in">
+          <div class="back"><span class="iconfont icon-sao"></span></div>
+          <h1>一吖</h1>
+          <div class="he-in">
+            <div class="back"><span class="iconfont icon-shezhi"></span></div>
+        </div>
+      </header>
+      <section>
+        <div class="banner">
+          <img src="./images/3_02.png" alt="">
+        </div>
+        <div class="sige">
+          <div class="one"><img src="./images/1.png" alt=""><h3>视频通话</h3></div>
+          <div class="two"><img class="zhong"src="./images/2.png" alt=""><h3>实时监控</h3></div>
+          <div class="three"> <img class="zhong2"src="./images/3.png" alt=""><h3>成长记录</h3></div>
+          <div class="four"><img class="zhong3"src="./images/4.png" alt=""><h3>讲故事</h3></div>    
+        </div>
+        <div class="jianggu">
+          <div class="up">
+            <div class="kong"></div>
+            <h3>推荐好故事</h3>
+            <h4 class="one1">换一批<span>></span></h4>
+          </div>
+          <div class="tu1">
+            <img class="tu11"src="./images/9_05.png" alt="" >
+            <img class="tu11"src="./images/9_07.png" alt="" >
+            <img class="tu11"src="./images/9_09.png" alt="" >
+          </div>
+    <div class="up">
+        <div class="kong"></div>
+        <h3>推荐好音乐</h3>
+        <h4 class="two1">换一批<span>></span></h4>
+      </div>
+  <div class="tu1">
+          <img class="tu22"src="./images/9_14.png" alt="">
+          <img class="tu22"src="./images/9_15.png" alt="">
+          <img class="tu22"src="./images/9_16.png" alt="">
+</div>
+      <div class="up">
+         <div class="kong"></div>
+         <h3>推荐好声音</h3>
+         <h4 class="three1">换一批<span>></span></h4>
+        </div>
+    <div class="tu1">
+        <img class="tu23"src="./images/9_20.png" alt="">
+        <img class="tu23"src="./images/9_21.png" alt="">
+        <img class="tu23"src="./images/9_22.png" alt="">
+  </div>
+        </div>
+      </section>
+      <footer>
+          <span class="iconfont icon-home"></span><span class="iconfont icon-zhuye"></span><span class="iconfont icon-gerenzhongxinwoderenwubiaozhuntoumianxing
+          "></span>
+      </footer>
+    </div>
+    <script> document.documentElement.style.fontSize =
+      document.documentElement.clientWidth / 10.24 + "px";
+      var one=["./images/u116.jpg","./images/u118.jpg","./images/u120.jpg"]
+      var one1=["./images/9_05.png","./images/9_07.png","./images/9_09.png"]
+      var arr=document.querySelectorAll(".tu11")
+      var bb=false
+      document.querySelector(".one1").onclick=function(){
+        if(!bb){
+             arr.forEach(function(ele,index){
+        ele.setAttribute("src",one[index])
+       })
+       bb=true
+        }else{
+          arr.forEach(function(ele,index){
+        ele.setAttribute("src",one1[index])
+       })
+       bb=false
+        }
+      }
+      var two=["./images/u126.png","./images/u128.png","./images/u130.png"]
+      var two1=["./images/9_14.png","./images/9_15.png","./images/9_16.png"]
+      var er=document.querySelectorAll(".tu22")
+      document.querySelector(".two1").onclick=function(){
+        if(!bb){
+             er.forEach(function(ele,index){
+        ele.setAttribute("src",two[index])
+       })
+       bb=true
+        }else{
+          er.forEach(function(ele,index){
+        ele.setAttribute("src",two1[index])
+       })
+       bb=false
+        }
+      }
+      var three=["./images/u135.png","./images/u137.png","./images/u139.png"]
+      var three1=["./images/9_20.png","./images/9_21.png","./images/9_22.png"]
+      var err=document.querySelectorAll(".tu23")
+      document.querySelector(".three1").onclick=function(){
+        if(!bb){
+             err.forEach(function(ele,index){
+        ele.setAttribute("src",three[index])
+       })
+       bb=true
+        }else{
+          err.forEach(function(ele,index){
+        ele.setAttribute("src",three1[index])
+       })
+       bb=false
+        }
+      }
+      document.querySelector('.icon-sao').onclick=function(){
+        location.assign("./saoyisao.html")
+      }
+      document.querySelector('.icon-shezhi').onclick=function(){
+        location.assign("./shezhi.html")
+      }
+      var vb=document.querySelectorAll(".one>img")
+   vb[0].onclick=function(){
+    location.assign("./zhaoxiang.html")
+   }
+   document.querySelector(".zhong").onclick=function(){
+    location.assign("./shishijiankong.html")
+   }
+   document.querySelector(".zhong2").onclick=function(){
+    location.assign("./chengzhangjilu.html")
+   }
+   document.querySelector(".zhong3").onclick=function(){
+    location.assign("./jianggushi.html")
+   }
+   document.querySelector('.icon-home').style.color="yellow"
+   document.querySelector(".icon-zhuye").onclick=function(){
+    location.assign("./shequ.html")
+   }
+   document.querySelector(".icon-gerenzhongxinwoderenwubiaozhuntoumianxing").onclick=function(){
+    location.assign("./wode.html")
+   }
+      </script>
+  </body>
+</html>

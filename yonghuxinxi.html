@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/chushihua.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/yonghuxinxi.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="he-in">
+          <div class="back"><span class="iconfont icon-xiaoyuhao"></span></div>
+          <h1>用户信息</h1>
+          <div></div>
+        </div>
+      </header>
+      <section>
+        <div class="up-tu">
+          <img src="./images/dada11.jpg" alt="" />
+        </div>
+        <div class="xuanze">
+          <h3>
+            <div>
+              <h5></h5>
+            </div>
+            <span>宝妈</span>
+          </h3>
+          <h4>
+            <div>
+              <h5></h5>
+            </div>
+            <span>宝爸</span>
+          </h4>
+        </div>
+        <div class="three-input">
+          <span class="iconfont icon-yonghu-tianchong"></span>
+          <input class="up" type="text" placeholder="请输入用户名" />
+        </div>
+        <div class="three-input">
+          <span class="iconfont icon-icon_xiaolian-mian"></span>
+          <input class="up1" type="text" placeholder="请输入年龄" />
+        </div>
+        <a class="denglu" href="./xinxizhuce2.html">下一步</a>
+      </section>
+    </div>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 10.24 + "px";
+      var shi = false;
+      document.querySelector(".xuanze > h3 > div").onclick = function() {
+        document.querySelector(".xuanze h4 h5").style.display = "none";
+        if (!shi) {
+          document.querySelector(".xuanze >h3 h5").style.display = "block";
+          document.querySelector(".xuanze h4 h5").style.display = "none";
+          shi = true;
+          shi1 = false;
+        } else {
+          document.querySelector(".xuanze >h3 h5").style.display = "none";
+          document.querySelector(".xuanze h4 h5").style.display = "block";
+          shi = false;
+          shi1 = true;
+        }
+      };
+      var shi1 = false;
+      document.querySelector(".xuanze > h4 > div").onclick = function() {
+        if (!shi1) {
+          document.querySelector(".xuanze h4 h5").style.display = "block";
+          document.querySelector(".xuanze >h3 h5").style.display = "none";
+          shi1 = true;
+          shi = false;
+        } else {
+          document.querySelector(".xuanze h4 h5").style.display = "none";
+          document.querySelector(".xuanze >h3 h5").style.display = "block";
+          shi1 = false;
+          shi = true;
+        }
+      };
+      document.querySelector(".icon-xiaoyuhao").onclick = function() {
+        window.history.back();
+      };
+      document.querySelector(".denglu").onclick = function(event) {
+        var zhang = document.querySelector(".up").value;
+        var mi = document.querySelector(".up1").value;
+        if (zhang === "") {
+          alert("账号呢老铁");
+          event.preventDefault();
+        } else if (mi === "") {
+          alert("密码呢老铁");
+          event.preventDefault();
+        }
+      };
+    </script>
+  </body>
+</html>

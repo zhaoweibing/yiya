@@ -1,0 +1,171 @@
+.wrap {
+  width: 10.24rem;
+  height: 100vh;
+}
+.swiper-container {
+  width: 10.24rem;
+  height: 100vh;
+}
+img {
+  width: 100%;
+}
+.box1,
+.box2,
+.box3,
+.box4 {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.sun {
+  width: 70%;
+  position: absolute;
+  top: 10vh;
+  left: -50px;
+}
+.yun3 {
+  width: 70%;
+  position: absolute;
+  top: 65vh;
+  left: -100px;
+  transition: all 2s;
+}
+.yun1 {
+  width: 70%;
+  position: absolute;
+  top: 10vh;
+  right: -100px;
+  transition: all 2s;
+}
+.yun2 {
+  width: 70%;
+  position: absolute;
+  top: 65vh;
+  right: -100px;
+  transition: all 2s;
+}
+.child1 {
+  width: 90%;
+  position: absolute;
+  top: 0px;
+  right: 7%;
+  transition: all 2s;
+}
+.two-jiqi {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.yun21 {
+  width: 45%;
+  position: absolute;
+  top: 65vh;
+  left: 0px;
+  transition: all 2s;
+}
+.yun23 {
+  width: 45%;
+  position: absolute;
+  top: 10vh;
+  right: 0px;
+  transition: all 2s;
+}
+.yun22 {
+  width: 45%;
+  position: absolute;
+  top: 10vh;
+  left: 0px;
+  transition: all 2s;
+}
+.yun24 {
+  width: 45%;
+  position: absolute;
+  top: 65vh;
+  right: 0px;
+  transition: all 2s;
+}
+.yun31 {
+  width: 30%;
+  position: absolute;
+  top: 10vh;
+  left: 0px;
+  transition: all 2s;
+}
+.yun32 {
+  width: 30%;
+  position: absolute;
+  top: 8vh;
+  left: 40vw;
+  transition: all 2s;
+}
+.yun33 {
+  width: 30%;
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  transition: all 2s;
+}
+.yun34 {
+  width: 90%;
+  position: absolute;
+  top: 10vh;
+  right: 30px;
+  transition: all 2s;
+}
+.jia {
+  width: 38%;
+  position: absolute;
+  top: 75vh;
+  right: 114px;
+  user-select: none;
+}
+@media screen and (max-width: 375px) {
+  .jia {
+    width: 38%;
+    position: absolute;
+    top: 61vh;
+    right: 102px;
+  }
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 172px;
+  }
+  .yun2,
+  .yun3,
+  .yun21,
+  .yun24 {
+    top: 45vh;
+  }
+}
+@media screen and (min-width: 375px) {
+  .jia {
+    width: 38%;
+    position: absolute;
+    top: 75vh;
+    right: 102px;
+  }
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 60px;
+  }
+  .yun2,
+  .yun3,
+  .yun21,
+  .yun24 {
+    top: 45vh;
+  }
+}
+@media screen and (max-width: 414px) {
+  .z-1,
+  .z-2,
+  .z-3,
+  .z-4 {
+    width: 115%;
+    height: 100%;
+  }
+  .jia {
+    bottom: 200px;
+  }
+}

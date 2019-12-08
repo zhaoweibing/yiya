@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/chushihua.css" />
+    <link rel="stylesheet" href="./css/iconfont2.css" />
+    <link rel="stylesheet" href="./css/shequ.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+        <header>
+            <div class="he-in">
+              <div class="back"><span class="iconfont icon-sao"></span></div>
+              <h1>一吖</h1>
+              <div class="he-in">
+                <div class="back"><span class="iconfont icon-shezhi"></span></div>
+            </div>
+          </header>
+    <section>
+      <div class="one">
+        <img src="./images/1_u501.jpg" alt="">
+      </div>
+      <div class="two">
+        <div class="i-1">
+          <img src="./images/11.png" alt="">
+        </div>
+        <div class="i-2">
+          <img src="./images/22.png" alt="">
+        </div>
+        <div class="i-3">
+          <img src="./images/33.png" alt="">
+        </div>
+        <div class="i-4">
+          <img src="./images/44.png" alt="">
+        </div>
+      </div>
+      <div class="three"></div>
+    </section>
+    <footer>   <span class="iconfont icon-home"></span><span class="iconfont icon-zhuye"></span><span class="iconfont icon-gerenzhongxinwoderenwubiaozhuntoumianxing
+      "></span></footer>
+    </div>
+    <script>
+    document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 10.24 + "px";
+    var arr=[
+      {
+        author:{
+          name:"小黑",
+          avatar:"./images/u116.jpg",
+          leval:7,
+          stears:5
+        },
+        pic:"./images/da2_03.png",
+        info:"小明的爸爸是他爸，小明的爷爷是他爷",
+        comments:[
+          {
+            name:"小王:",
+            text:"你家娃真帅"
+          },
+          {
+            name:"小李:",
+            text:"666"
+          }
+        ],
+        likes:10,
+        inFollow:false
+      },
+      {
+        author:{
+          name:"小白",
+          avatar:"./images/u118.jpg",
+          leval:5,
+          stears:9
+        },
+        pic:"./images/da1_03.png",
+        info:"小王的爸爸是他爸，小里的爷爷是他爷",
+        comments:[
+          {
+            name:"小炸:",
+            text:"你家娃真炸"
+          },
+          {
+            name:"小一:",
+            text:"炸炸炸"
+          }
+        ],
+        likes:10,
+        inFollow:false
+      }
+    ]
+    arr.forEach(function(ele){
+    
+      var box=document.createElement("div")
+      box.className="box clearfix" 
+      var ul=document.createElement("ul") 
+      box.innerHTML="<img class='touxiang'src="+ele.author.avatar+"><div class='name'>"+ele.author.name+"</div><div class='da'><div class='xin'><img src='./images/xin_03.png'>"+ele.author.leval+"</div><div class='ji'><img src='./images/xin_05.png'>"+ele.author.stears+"</div></div><img class='tu' src="+ele.pic+"><div class='info'>"+ele.info+"</div><img class='ping' src='./images/u507.png'><img class='zan' src='./images/u516.png'><img class='haoyou' src='./images/u521.png'><div class='zx'></div>"
+      ele.comments.forEach(function(it){
+        var qw=document.createElement("li")
+        qw.className="qw"
+        qw.innerText=it.name
+       ul.appendChild(qw)
+       var er=document.createElement("li")
+       var dr=document.createElement("br")
+        er.className="er"
+        er.innerText=it.text
+       ul.appendChild(er)
+       ul.appendChild(dr)
+      })
+      document.querySelector(".three").appendChild(box)
+      document.querySelector(".three").appendChild(ul)
+    })
+    var ping=document.querySelectorAll('.ping')
+    var ul=document.querySelectorAll('ul')
+    var sgu=false
+    ping.forEach(function(ele,index){
+      ele.onclick=function(){
+        if(!sgu){
+          ul[index].style.display="block"
+          sgu=true
+        }else{
+          ul[index].style.display="none"
+          sgu=false
+        }
+      }
+    })
+    var zany=["./images/u516.png","./images/u518.png"]
+    var zan=document.querySelectorAll('.zan')
+    zan.forEach(function(ele){
+ele.onclick=function(){
+  if(!sgu){
+    ele.setAttribute("src",zany[1])
+    sgu=true
+  }else{
+    ele.setAttribute("src",zany[0])
+    sgu=false
+  }
+}
+    })
+    var zanx=["./images/u521.png","./images/u523.png"]
+    var haoyou=document.querySelectorAll('.haoyou')
+    haoyou.forEach(function(ele){
+ele.onclick=function(){
+  if(!sgu){
+    ele.setAttribute("src",zanx[1])
+    sgu=true
+  }else{
+    ele.setAttribute("src",zanx[0])
+    sgu=false
+  }
+}
+    })
+    document.querySelector('.icon-zhuye').style.color="yellow"
+    document.querySelector('.icon-sao').onclick=function(){
+      location.assign("./saoyisao.html")
+    }
+    document.querySelector('.icon-shezhi').onclick=function(){
+      location.assign("./shezhi.html")
+    }
+    document.querySelector('.i-1').onclick=function(){
+      location.assign("./wodeguanzhu.html")
+    }
+    document.querySelector('.i-2').onclick=function(){
+      location.assign("./fabu.html")
+    }
+    document.querySelector('.i-3').onclick=function(){
+      location.assign("./liaotian.html")
+    }
+    document.querySelector('.i-4').onclick=function(){
+      location.assign("./wodeshoucang.html")
+    }
+    document.querySelector(".icon-gerenzhongxinwoderenwubiaozhuntoumianxing").onclick=function(){
+    location.assign("./wode.html")
+   }
+   document.querySelector(".icon-home").onclick=function(){
+    location.assign("./shouye.html")
+   }
+        </script>
+  </body>
+</html>

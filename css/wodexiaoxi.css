@@ -1,0 +1,38 @@
+.wrap {
+  width: 100vw;
+}
+header {
+  width: 100vw;
+  height: 2.2rem;
+  background-color: rgb(221, 45, 45);
+  display: flex;
+  justify-content: center;
+}
+.he-in {
+  width: 9rem;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 26px;
+  color: #fff;
+  margin-top: 1rem;
+}
+.he-in > div {
+  width: 1rem;
+  height: 1rem;
+}
+.back {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 1rem;
+}
+.back span {
+  font-size: 30px;
+}
+section {
+  width: 100vw;
+}
+section img {
+  width: 100%;
+}

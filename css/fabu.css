@@ -1,0 +1,82 @@
+.wrap {
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  width: 100vw;
+  height: 2.2rem;
+  background-color: rgb(221, 45, 45);
+  display: flex;
+  justify-content: center;
+}
+.he-in {
+  width: 9rem;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 22px;
+  color: #fff;
+  margin-top: 1.1rem;
+}
+.he-in > div {
+  width: 1rem;
+  height: 1rem;
+}
+.back {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 0.9rem;
+}
+.back span {
+  font-size: 30px;
+}
+.xiang {
+  margin-top: 1.2rem;
+  font-size: 18px;
+  color: #fff;
+}
+section {
+  width: 100vw;
+}
+.one {
+  margin: 0 auto;
+  width: 9rem;
+  border-bottom: 1px solid #ccc;
+  height: 4rem;
+}
+.one > .xie > .icon-xiewrite18 {
+  font-size: 28px;
+}
+.aiyin {
+  font-size: 16px;
+}
+.two {
+  margin: 0 auto;
+  width: 9rem;
+}
+.two > .xiangji > .icon-xiangji {
+  font-size: 28px;
+}
+.yu img {
+  width: 2rem;
+  height: 2rem;
+}
+.yu .er {
+  margin-left: 0.2rem;
+}
+.two > .yu > .icon-add_circle {
+  font-size: 80px;
+}
+.three {
+  margin: 0.5rem auto;
+  width: 9rem;
+}
+h3 {
+  float: left;
+  font-size: 18px;
+}
+h4 {
+  float: right;
+  font-size: 18px;
+}

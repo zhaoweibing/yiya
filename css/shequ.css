@@ -1,0 +1,132 @@
+.wrap {
+  width: 100vw;
+}
+header {
+  width: 100vw;
+  height: 2.2rem;
+  background-color: rgb(221, 45, 45);
+  display: flex;
+  justify-content: center;
+}
+.he-in {
+  width: 9rem;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 26px;
+  color: #fff;
+  margin-top: 1rem;
+}
+.he-in > div {
+  width: 1rem;
+  height: 1rem;
+}
+.back {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 1rem;
+}
+.back span {
+  font-size: 30px;
+}
+section {
+  width: 100vw;
+  padding-bottom: 1.6rem;
+}
+.one {
+  width: 100vw;
+}
+.one img {
+  float: left;
+  width: 100%;
+}
+.two {
+  padding: 0.3rem 0 0.3rem 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+.two > div {
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+}
+.two > div > img {
+  width: 60%;
+}
+.three {
+  width: 100vw;
+  padding-top: 0.3rem;
+  background-color: rgb(245, 227, 199);
+}
+.three .name {
+  font-size: 24px;
+  color: hotpink;
+}
+.three .touxiang {
+  margin-left: 0.3rem;
+  margin-bottom: 0.3rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  float: left;
+}
+.three .xin {
+  float: left;
+  font-size: 18px;
+  color: hotpink;
+}
+.three .ji {
+  float: left;
+  font-size: 18px;
+  color: hotpink;
+}
+.three .tu {
+  display: block;
+  width: 9.6rem;
+
+  margin: 0.3rem auto;
+}
+.three .info {
+  font-size: 18px;
+  color: hotpink;
+  padding-left: 0.3rem;
+}
+.three .ping {
+  float: left;
+  margin-left: 0.3rem;
+}
+.three .zan {
+  float: left;
+  margin-left: 0.3rem;
+}
+.three .haoyou {
+  float: right;
+  margin-right: 0.3rem;
+}
+li {
+  list-style: none;
+}
+ul {
+  display: none;
+}
+.er,
+.qw {
+  float: left;
+  font-size: 18px;
+}
+footer {
+  width: 100vw;
+  height: 1.2rem;
+  background-color: rgb(236, 75, 123);
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.4rem;
+  position: fixed;
+  left: 0px;
+  top: 91.9vh;
+}
+footer > .iconfont {
+  font-size: 24px;
+  color: #fff;
+}

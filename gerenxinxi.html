@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/chushihua.css" />
+    <link rel="stylesheet" href="./css/iconfont6.css" />
+    <link rel="stylesheet" href="./css/iconfont2.css" />
+    <link rel="stylesheet" href="./css/gerenxinxi.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+    <header> 
+<div class="he-in">
+    <div class="back"><span class="iconfont icon-fanhui"></span></div>
+    <h1>个人资料</h1>
+    <div class="he-in">
+    <div class="back"><span class="iconfont icon-shezhi"></span></div>
+</div>
+    </header>
+    <section>
+        <div class="one">
+                <span class="iconfont icon-icon-test zx"> 头像</span>
+                <span class="xiaoyu">></span> <img src="./images/9_05.png" alt="">
+            </div> 
+            <div class="one">
+            <span class="iconfont icon-23 zx">  昵称</span>
+            <span class="xiaoyu">></span> 
+            <span class="dade">赵四爸爸</span>
+        </div>
+        <div class="one">
+        <span class="iconfont icon-shouji zx">  手机号码</span>
+        <span class="xiaoyu">></span> 
+        <span class="dade">12345678901</span>
+    </div>
+    <div class="one">
+            <span class="iconfont icon-youxiang zx">  邮箱</span>
+            <span class="xiaoyu">></span> 
+            <span class="dade">未绑定</span>
+        </div>
+    </section>
+    </div>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 10.24 + "px";
+        document.querySelector('.icon-fanhui').onclick=function(){
+          window.history.back()
+        }
+        document.querySelector('.icon-shezhi').onclick=function(){
+          location.assign('./shezhi.html')
+        }
+    </script>
+  </body>
+</html>

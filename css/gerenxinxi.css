@@ -1,0 +1,65 @@
+.wrap {
+  width: 100vw;
+}
+header {
+  width: 100vw;
+  height: 2.2rem;
+  background-color: rgb(221, 45, 45);
+  display: flex;
+  justify-content: center;
+}
+.he-in {
+  width: 9rem;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 26px;
+  color: #fff;
+  margin-top: 1rem;
+}
+.he-in > div {
+  width: 1rem;
+  height: 1rem;
+}
+.back {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 1rem;
+}
+.back span {
+  font-size: 30px;
+}
+section {
+  width: 100vw;
+  background-color: rgb(249, 250, 203);
+}
+.one {
+  width: 100vw;
+  height: 2rem;
+  padding: 0.2rem 0rem 0 0.3rem;
+
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.zx {
+  font-size: 22px;
+}
+.one img {
+  display: block;
+  float: right;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+.xiaoyu {
+  display: block;
+  float: right;
+  margin-right: 0.3rem;
+  line-height: 2rem;
+}
+.dade {
+  float: right;
+  font-size: 20px;
+  line-height: 2rem;
+}
